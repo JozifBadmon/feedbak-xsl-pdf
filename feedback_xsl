@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+	<xsl:include href="/opt/dbdoc/include/gerador_pdf/templates_xsl_095.xsl"/>
+
+	<xsl:template match="/">
+		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format" font-family="Garamond" font-size="12pt">
+			<fo:layout-master-set>
+				<fo:simple-page-master master-name="simple"
+						page-height="297mm"
+						page-width="210mm"
+						margin-top="10mm"
+						margin-bottom="10mm"
+						margin-left="10mm"
+						margin-right="10mm">
+
+					<fo:region-body margin-top="25mm" margin-bottom="22.5mm"/>
+					<fo:region-before extent="20mm"/>
+					<fo:region-after extent="20mm"/>
+				</fo:simple-page-master>
+			</fo:layout-master-set>
+
+			<fo:page-sequence master-reference="simple">
+				<fo:static-content flow-name="xsl-region-before">
+					<xsl:for-each select="template"><xsl:call-template name="header"/></xsl:for-each>
+				</fo:static-content>
+
+				<fo:static-content flow-name="xsl-region-after">
+					<xsl:for-each select="template"><xsl:call-template name="footer"/></xsl:for-each>
+				</fo:static-content>
+
+				<fo:flow flow-name="xsl-region-body">
+					<xsl:for-each select="template"><xsl:call-template name="body"/></xsl:for-each>
+				</fo:flow>
+			</fo:page-sequence>
+		</fo:root>
+	</xsl:template>
+
+	<xsl:template name="header">
+		
+			<fo:table table-layout="auto" width="100%">
+			<fo:table-column column-width="proportional-column-width(1)"/>
+			<fo:table-body>
+				<fo:table-row height="0cm">
+					<fo:table-cell text-align="center" display-align="center"><fo:block><!--Elemento1--><fo:external-graphic src="/home1/_dbdoc/armazem_imagens/template3/1.img" width="1.9cm" height="2.1cm" content-width="1.9cm" content-height="2.1cm" scaling="non-uniform"></fo:external-graphic></fo:block></fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="0cm">
+					<fo:table-cell text-align="center" display-align="center"><fo:block><!--CÂMARA MUNICIPAL DA TROFA--></fo:block></fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="0cm">
+					<fo:table-cell border-bottom="0mm solid black"><fo:block></fo:block></fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="0.2mm">
+					<fo:table-cell><fo:block></fo:block></fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="0cm">
+					<fo:table-cell border-bottom="0mm solid black"><fo:block></fo:block></fo:table-cell>
+				</fo:table-row>
+			</fo:table-body>
+		</fo:table>
+
+	</xsl:template>
+
+	<xsl:template name="body">
+		<fo:table table-layout="auto" width="100%">
+			<fo:table-column column-width="14.3325mm"/>
+			<fo:table-column column-width="0.5290mm"/>
+			<fo:table-column column-width="0.2644mm"/>
+			<fo:table-column column-width="0.2645mm"/>
+			<fo:table-column column-width="23.5391mm"/>
+			<fo:table-column column-width="1.0579mm"/>
+			<fo:table-column column-width="4.7607mm"/>
+			<fo:table-column column-width="0.2644mm"/>
+			<fo:table-column column-width="0.2645mm"/>
+			<fo:table-column column-width="30.4157mm"/>
+			<fo:table-column column-width="38.8791mm"/>
+			<fo:table-column column-width="35.9698mm"/>
+			<fo:table-column column-width="29.3576mm"/>
+			<fo:table-column column-width="0.5290mm"/>
+			<fo:table-column column-width="0.2645mm"/>
+			<fo:table-column column-width="0.0000mm"/>
+			<fo:table-body>
+				<fo:table-row height="0.5cm" border-bottom="0.25mm solid black">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="4.7607mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block border="0.00mm solid black">
+						 Dê o seu FeedBack </fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block border="0.00mm solid black"></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				
+				<fo:table-row height="9.5214mm">
+					<fo:table-cell border="0.00mm solid black">
+						<fo:block border="0.00mm solid black">Gostaríamos muito de ouvir seus pensamentos, sugestões, preocupações ou problemas com qualquer coisa para que possamos melhorar!</fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="4.7607mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				 
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				 
+				<fo:table-row height="2.6449mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="4.7607mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				 
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="4.2317mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="4.7607mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					 
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				
+		<fo:table-row height="1mm">
+			<fo:block border="0.00mm solid black"><!--Elemento51--><xsl:apply-templates select="var13_dec"/></fo:block>
+		</fo:table-row>			
+				
+
+						
+
+				<fo:table-row height="1mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="14" border="0.00mm solid black">
+	<fo:block border="0.00mm solid black"><!--Elemento81--><xsl:value-of select="var9" disable-output-escaping="yes"/></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="6.3476mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+				<fo:table-row height="4.7607mm">
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell padding="8pt" number-rows-spanned="1" number-columns-spanned="2" border="0.00mm solid black">
+						<fo:block border="0.00mm solid black"><!--Elemento81--><xsl:value-of select="var10" disable-output-escaping="yes"/></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+					<fo:table-cell number-rows-spanned="1" number-columns-spanned="1" border="0.00mm solid black">
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+			</fo:table-body>
+		</fo:table>
+		<fo:block id="endofdoc"></fo:block>
+	</xsl:template>
+
+	<xsl:template name="footer">
+		<fo:table table-layout="auto" width="100%">
+			<fo:table-column column-width="100%"/>
+			<fo:table-body>
+				<fo:table-row>
+					<fo:table-cell>
+						<fo:block></fo:block>
+					</fo:table-cell>
+				</fo:table-row>
+			</fo:table-body>
+		</fo:table>
+
+	</xsl:template>
+</xsl:stylesheet>
